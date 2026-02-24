@@ -27,7 +27,7 @@ class Program
         Console.WriteLine();
 
         Console.WriteLine("Media com oito casas decimais: " + medida.ToString("F8", CultureInfo.InvariantCulture));
-        Console.WriteLine("Arredondando (três casas decimais): " + medida.ToString("F3", CultureInfo.InvariantCulture));
+        Console.WriteLine("Arredondando (três casas decimais): {0:F8}", medida);
         Console.WriteLine("Separador decimal invariant culture: " + medida.ToString("F3", CultureInfo.InvariantCulture));
         Console.ReadKey();
     }
